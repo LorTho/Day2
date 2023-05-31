@@ -9,7 +9,7 @@ public class Main {
         System.out.println(fakultyFor(7));
         System.out.println(fakultyWhile(7));
 
-       // scannerSumme();
+        scannerSumme();
     }
     public static int addition(int x, int y){
         return x+y;
@@ -46,5 +46,6 @@ public class Main {
         if(scanner.hasNextInt())
             number2 = scanner.nextInt();
         System.out.println(summe2(number1, number2));
+        summe2(number1, number2);
     }
 }
