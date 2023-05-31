@@ -35,4 +35,16 @@ public class Main {
         }
         return String.format("While: Die Fakulät von %d ist: %d" ,x,f);
     }
+    public static void scannerSumme(){
+        int number1=0, number2=0;
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Bitte gebe die erste Zahl ein:");
+        if(scanner.hasNextInt())
+            number1 = scanner.nextInt();
+        System.out.print("Bitte gebe die zweite Zahl ein:");
+        if(scanner.hasNextInt())
+            number2 = scanner.nextInt();
+        System.out.println(summe2(number1, number2));
+    }
 }
