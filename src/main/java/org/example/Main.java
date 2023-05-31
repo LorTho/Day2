@@ -9,7 +9,7 @@ public class Main {
         System.out.println(fakultyFor(7));
         System.out.println(fakultyWhile(7));
 
-        scannerSumme();
+        System.out.println(scannerSumme());
     }
     public static int addition(int x, int y){
         return x+y;
@@ -35,7 +35,7 @@ public class Main {
         }
         return String.format("While: Die Fakulät von %d ist: %d" ,x,f);
     }
-    public static void scannerSumme(){
+    public static String scannerSumme(){
         int number1=0, number2=0;
         Scanner scanner = new Scanner(System.in);
 
@@ -45,7 +45,6 @@ public class Main {
         System.out.print("Bitte gebe die zweite Zahl ein:");
         if(scanner.hasNextInt())
             number2 = scanner.nextInt();
-        System.out.println(summe2(number1, number2));
-        summe2(number1, number2);
+        return summe2(number1, number2);
     }
 }
